@@ -1,0 +1,14 @@
+header {
+  height: 160px;
+  background-color: gray;
+}
+
+section {
+  min-height: 700px;
+  background-color: lightgray;
+}
+
+footer {
+  height: 423px;
+  background-color: darkgray;
+}
