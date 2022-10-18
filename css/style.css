@@ -36,7 +36,10 @@ header a::before,
 header a::after,
 .btn-search::before,
 .max::before,
-.all-service::after {
+.all-service::after,
+.link-login::before,
+.link-id::before,
+.link-join::before {
   content: "";
   display: block;
   background-size: 457px 434px;
@@ -444,10 +447,123 @@ header .group2 .inner .group_nav .nav-list .tv::before {
   margin: 9px 2px 0 0;
   vertical-align: top;
 }
-/* SECTION */
-section {
+/* MAIN */
+main {
   min-height: 700px;
-  background-color: lightgray;
+  position: relative;
+  width: 1130px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  letter-spacing: -0.2px;
+  line-height: 16px;
+}
+
+.column-left {
+  float: left;
+  width: 750px;
+}
+
+.column-right {
+  position: relative;
+  float: right;
+  width: 350px;
+  background-color: #fff;
+}
+
+.column-right .sc-login {
+  padding: 16px 16px 12px 17px;
+  background-color: #f7f9fa;
+  border: 1px solid #dae1e6;
+}
+
+.column-right .sc-login .login_msg {
+  padding-left: 3px;
+  color: grey;
+}
+
+.column-right .sc-login .link-login {
+  display: block;
+  padding: 15px 0;
+  margin-top: 11px;
+  background-color: #19ce60;
+  border: 1px solid #15c654;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.column-right .sc-login .link-login::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 12px;
+  background-position: -138px -330px;
+  vertical-align: top;
+  margin: 2px 5px 0 0;
+}
+
+.column-right .sc-login .sub-area {
+  margin: 14px 8px 0 4px;
+  color: #404040;
+}
+
+.column-right .sc-login .sub-area::after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  clear: both;
+}
+
+.column-right .sc-login .sub-area > *:hover {
+  text-decoration: underline;
+}
+
+.column-right .sc-login .link-id {
+  float: left;
+}
+
+.column-right .sc-login .link-id::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  background-position: -444px -98px;
+  margin: -1px 1px 1px;
+  padding-right: 4px;
+  vertical-align: top;
+}
+
+.column-right .sc-login .link-password {
+  float: left;
+}
+
+.column-right .sc-login .link-password::before {
+  background-color: #d7dce0;
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  vertical-align: top;
+  content: "";
+  margin: 0 5px 0 6px;
+  vertical-align: 3px;
+}
+.column-right .sc-login .link-join {
+  float: right;
+}
+
+.column-right .sc-login .link-join::before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-position: -444px -129px;
+  vertical-align: top;
+  margin: 2px 5px 0 0;
 }
 
 /* FOOTER */
