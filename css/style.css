@@ -32,10 +32,11 @@ button {
   margin: -1px;
 }
 
-a::before,
-a::after,
+header a::before,
+header a::after,
 .btn-search::before,
-.max::before {
+.max::before,
+.all-service::after {
   content: "";
   display: block;
   background-size: 457px 434px;
@@ -451,6 +452,218 @@ section {
 
 /* FOOTER */
 footer {
-  height: 423px;
-  background-color: darkgray;
+  background-color: #fafbfc;
+  border-top: 1px solid #e4e8eb;
+  line-height: 16px;
+}
+
+footer .inner {
+  width: 1130px;
+  padding: 0 30px 92px;
+  margin: 0 auto;
+}
+
+footer .inner .banner-area {
+  height: 86px;
+  padding: 24px 0;
+  border-bottom: 1px solid #e4e8eb;
+}
+
+footer .inner .notice-area {
+  overflow: hidden;
+  padding: 16px 0 15px;
+  border-bottom: 1px solid #e4e8eb;
+  color: #202020;
+  font-weight: bold;
+}
+
+footer .inner .notice-area::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer .inner .notice-area a:hover {
+  text-decoration: underline;
+}
+
+footer .inner .notice-area .notice {
+  float: left;
+}
+
+footer .inner .notice-area .all-service {
+  float: right;
+}
+
+footer .inner .notice-area .all-service::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background-position: -444px -268px;
+  margin-left: 10px;
+  vertical-align: -2px;
+}
+
+footer .inner .aside-area {
+  border-bottom: 1px solid #e4e8eb;
+}
+
+footer .inner .aside-area::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer .inner .aside-area a:hover {
+  text-decoration: underline;
+}
+
+footer .inner .aside-area .partner-box-wrap {
+  padding: 20px 0;
+  width: 780px;
+  float: left;
+}
+
+footer .inner .aside-area .partner-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer .inner .aside-area .partner-box + .partner-box {
+  margin-top: 9px;
+}
+
+footer .inner .aside-area .partner-box .title {
+  float: left;
+  width: 87px;
+  font-weight: bold;
+}
+
+footer .inner .aside-area .partner-box .link-partner {
+  float: left;
+  color: #777;
+}
+
+footer .inner .aside-area .partner-box .link-partner + .link-partner::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background-color: #e4e8eb;
+  vertical-align: -1px;
+  margin: 0 8px;
+}
+
+footer .inner .aside-area .service-box-wrap {
+  float: right;
+  width: 350px;
+  padding: 28px 0;
+}
+
+footer .inner .aside-area .service-box-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer .inner .aside-area .service-box-wrap .service-box {
+  float: left;
+  max-width: 150px;
+}
+
+footer .inner .aside-area .service-box-wrap .service-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer .inner .aside-area .service-box-wrap .service-box > a {
+  float: right;
+  margin-left: 12px;
+  display: block;
+}
+
+footer .inner .aside-area .service-box-wrap .service-box > a img {
+  width: 48px;
+  height: 48px;
+  aspect-ratio: auto 48 / 48;
+  border: 0;
+}
+
+footer .inner .aside-area .service-box-wrap .service-box .service-info {
+  float: left;
+}
+
+footer .inner .aside-area .service-box-wrap .service-box .service-info strong {
+  display: block;
+  padding-top: 2px;
+  font-weight: bold;
+}
+
+footer .inner .aside-area .service-box-wrap .service-box .service-info a {
+  padding-top: 2px;
+  color: grey;
+}
+
+footer .inner .aside-area .service-box-wrap .service-box + .service-box {
+  margin-left: 50px;
+}
+
+footer .inner .aside-area .service-box-wrap .service-box + .service-box img {
+  width: 47px;
+  height: 50px;
+  aspect-ratio: auto 47 / 50;
+}
+
+footer .inner .corp-area {
+  padding-top: 25px;
+}
+
+footer .inner .corp-area::after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  clear: both;
+}
+
+footer .inner .corp-area a:hover {
+  text-decoration: underline;
+}
+
+footer .inner .corp-area .corp-list {
+  float: left;
+  margin-right: 13px;
+}
+
+footer .inner .corp-area .corp-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer .inner .corp-area .corp-list .corp-item {
+  float: left;
+  color: #777;
+}
+
+footer .inner .corp-area .corp-list .corp-item + .corp-item::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  margin: 0 6px;
+  background-color: #e4e8eb;
+  vertical-align: -1px;
+}
+
+footer .inner .corp-area .corp-list .corp-item:nth-child(5) {
+  font-weight: bold;
+}
+
+footer .inner .corp-area address {
+  float: left;
+  color: #202020;
+  font-weight: bold;
 }
