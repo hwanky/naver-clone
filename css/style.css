@@ -480,13 +480,17 @@ header .group2 .inner .group-nav .nav-list .tv::before {
 }
 /* MAIN */
 main {
-  min-height: 700px;
   position: relative;
   width: 1130px;
   padding: 20px 30px;
   margin: 0 auto;
-  letter-spacing: -0.2px;
   line-height: 16px;
+}
+
+main::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .column-left {
